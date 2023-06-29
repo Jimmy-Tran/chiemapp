@@ -20,6 +20,8 @@ export default function Home() {
                 crossOrigin="anonymous"></link>
 
         <link rel="icon" href="/favicon.ico" />
+            <script src="https://third-party-script.js" async />
+            <script src="https://third-party-script.js" defer />
           <script src="https://kit.fontawesome.com/35813e4dfa.js" crossOrigin="anonymous"></script>
       </Head>
         <section>
@@ -29,19 +31,20 @@ export default function Home() {
           <div className={styles.navbar}>
               <div className={styles.navdiv}>
                   <h1 className={styles.name}>chiem.</h1>
-                  <a>Home</a>
-                  <a>Projects</a>
-                  <a>Contact</a>
+                  <a href="/">Home</a>
+                  <a href="#project">Projects</a>
+                  <a href="#contact">Contact</a>
               </div>
 
           </div>
 
           <div className={styles.banner}>
               <div className={styles.bannerleft}>
-                  <h1>Crafting stunning websites<svg className={styles.svgicon} xmlns="http://www.w3.org/2000/svg" width="57.76257" height="42.77667" viewBox="0 0 57.76257 42.77667"><path d="M11.95807,9.16698c-3.74727,4.03459-7.49455,8.06917-11.24182,12.10376-1.37202,1.47722-.64613,3.49155,1.10317,4.17846,4.62035,1.81431,8.79785,4.64518,12.28856,8.16049,2.27051,2.28651,5.80634-1.24872,3.53553-3.53553-4.12829-4.15739-9.05087-7.30861-14.49489-9.44635l1.10317,4.17846c3.74727-4.03459,7.49455-8.06917,11.24182-12.10376,2.18766-2.35539-1.34005-5.89935-3.53553-3.53553h0Z" fill="currentColor"></path><path d="M42.26896,12.70251c3.74727,4.03459,7.49455,8.06917,11.24182,12.10376,.36772-1.39282,.73545-2.78564,1.10317-4.17846-5.44399,2.13773-10.36664,5.289-14.49489,9.44635-2.26983,2.28583,1.26405,5.82303,3.53553,3.53553,3.49076-3.51537,7.66813-6.34615,12.28856-8.16049,1.7493-.68691,2.47519-2.70124,1.10317-4.17846-3.74727-4.03459-7.49455-8.06917-11.24182-12.10376-2.19454-2.3628-5.72413,1.17913-3.53553,3.53553h0Z" fill="currentColor"></path><path d="M24.69051,40.9371c4.91551-12.58945,9.83102-25.17889,14.74653-37.76834,.49121-1.25808-.54011-2.74392-1.7461-3.0753-1.41591-.38905-2.58229,.48342-3.0753,1.7461-4.91551,12.58945-9.83102,25.17889-14.74653,37.76834-.49121,1.25808,.54011,2.74392,1.7461,3.0753,1.41591,.38905,2.58229-.48342,3.0753-1.7461h0Z" fill="currentColor"></path></svg></h1>
-                  <h2>I'm a Front-End developer based in 🇳🇱, Rotterdam with 3 years of experience in creating websites.</h2>
+                  <h1>
+                      Crafting innovative websites<svg className={styles.svgicon} xmlns="http://www.w3.org/2000/svg" width="57.76257" height="42.77667" viewBox="0 0 57.76257 42.77667"><path d="M11.95807,9.16698c-3.74727,4.03459-7.49455,8.06917-11.24182,12.10376-1.37202,1.47722-.64613,3.49155,1.10317,4.17846,4.62035,1.81431,8.79785,4.64518,12.28856,8.16049,2.27051,2.28651,5.80634-1.24872,3.53553-3.53553-4.12829-4.15739-9.05087-7.30861-14.49489-9.44635l1.10317,4.17846c3.74727-4.03459,7.49455-8.06917,11.24182-12.10376,2.18766-2.35539-1.34005-5.89935-3.53553-3.53553h0Z" fill="currentColor"></path><path d="M42.26896,12.70251c3.74727,4.03459,7.49455,8.06917,11.24182,12.10376,.36772-1.39282,.73545-2.78564,1.10317-4.17846-5.44399,2.13773-10.36664,5.289-14.49489,9.44635-2.26983,2.28583,1.26405,5.82303,3.53553,3.53553,3.49076-3.51537,7.66813-6.34615,12.28856-8.16049,1.7493-.68691,2.47519-2.70124,1.10317-4.17846-3.74727-4.03459-7.49455-8.06917-11.24182-12.10376-2.19454-2.3628-5.72413,1.17913-3.53553,3.53553h0Z" fill="currentColor"></path><path d="M24.69051,40.9371c4.91551-12.58945,9.83102-25.17889,14.74653-37.76834,.49121-1.25808-.54011-2.74392-1.7461-3.0753-1.41591-.38905-2.58229,.48342-3.0753,1.7461-4.91551,12.58945-9.83102,25.17889-14.74653,37.76834-.49121,1.25808,.54011,2.74392,1.7461,3.0753,1.41591,.38905,2.58229-.48342,3.0753-1.7461h0Z" fill="currentColor"></path></svg></h1>
+                  <h2>I'm a Front-End developer based in 🇳🇱, Rotterdam with 3 years of experience in creating websites for Minecraft server owners.</h2>
                   <a href="#project" className={styles.projectsbtn}><i className="fa-solid fa-arrow-down"></i> Projects</a>
-                  <a className={styles.emailbtn}><i className="fa-regular fa-envelope"></i> Email </a>
+                  <a href="#contact" className={styles.emailbtn}><i className="fa-regular fa-envelope"></i> Email </a>
               </div>
               <div className={styles.bannerright}>
                   <img className={styles.chiemimg} src="https://i.pinimg.com/564x/27/93/bf/2793bfd3bdf2ae50a59d62619a6d5193.jpg"></img>
@@ -66,7 +69,7 @@ export default function Home() {
 
                     <div className={styles.reverseTextcontainer}>
                         <h1 className={styles.headtitle}>BetterMarket<svg className={styles.reverseArrow} xmlns="http://www.w3.org/2000/svg" width="65.76062" height="20.94" viewBox="0 0 65.76062 20.94"><path d="M3.0696,14.35003c14.77852-4.66461,30.54831-5.6899,45.76236-2.61603,4.44585,.89825,8.8161,2.1243,13.095,3.6261,1.274,.44715,2.73515-.50817,3.0753-1.7461,.37901-1.37937-.46745-2.62652-1.7461-3.0753C47.82195,5.12165,31.2588,3.6356,15.11839,6.30519c-4.53218,.74961-8.99807,1.84099-13.37799,3.22345C-1.31727,10.49374-.01125,15.32246,3.0696,14.35003h0Z" fill="currentColor"></path><path d="M55.97417,3.76117l2.58581,4.86421,1.32984,2.5016,.66492,1.2508c.08649,.16269,.16913,.42327,.29552,.55591-.51452-.53997,1.42541-2.15361,.51312-1.82543-.8054,.28974-1.58804,.8423-2.34456,1.24356-.82749,.4389-1.65498,.87781-2.48247,1.31671-1.65498,.87781-3.30996,1.75562-4.96494,2.63342-1.15699,.61367-1.60767,2.31798-.89688,3.42047,.75851,1.17651,2.18291,1.55329,3.42047,.89688,1.93081-1.02411,3.86162-2.04822,5.79243-3.07233,.91943-.48767,1.83887-.97534,2.7583-1.46301,1.14784-.60882,2.34415-1.1119,2.8815-2.38522,.54904-1.30103,.0367-2.54313-.58127-3.70559l-1.55149-2.91853c-1.03432-1.94569-2.06865-3.89137-3.10297-5.83706-.61473-1.15638-2.31725-1.60814-3.42047-.89688-1.17565,.75796-1.55443,2.18355-.89688,3.42047h0Z" fill="currentColor"></path></svg></h1>
-                        <h3 className={styles.subtitle}>BetterMarket is a premade Tebex theme that I created for clients with a lower budget, this isn't exclusive but does express an exclusive look to your webstore.</h3>
+                        <h3 className={styles.subtitle}>BetterMarket is a premade Tebex theme that I created for clients with a lower budget, this isnt exclusive but does express an exclusive look to your webstore.</h3>
                     </div>
                     <img className={styles.codeimg} src="https://cdn.discordapp.com/attachments/904404290762854480/1115660078062772264/image.png"></img>
 
@@ -100,14 +103,12 @@ export default function Home() {
                             <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#flush-collapseTwo" aria-expanded="false"
                                     aria-controls="flush-collapseTwo">
-                                Accordion Item #2
+                                What language do you use?
                             </button>
                         </h2>
                         <div id="flush-collapseTwo" className="accordion-collapse collapse"
                              aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                            <div className={styles.abody}>Placeholder content for this accordion, which is intended to
-                                demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion
-                                body. Let's imagine this being filled with some actual content.
+                            <div className={styles.abody}>My main techstack is HTML, CSS, React, TailwindCSS and JavaScript
                             </div>
                         </div>
                     </div>
@@ -116,13 +117,13 @@ export default function Home() {
                             <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#flush-collapseThree" aria-expanded="false"
                                     aria-controls="flush-collapseThree">
-                                Accordion Item #3
+                                Question #3
                             </button>
                         </h2>
                         <div id="flush-collapseThree" className="accordion-collapse collapse"
                              aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
                             <div className={styles.abody}>Placeholder content for this accordion, which is intended to
-                                demonstrate the class. This is the third item's accordion
+                                demonstrate the class. This is the third items accordion
                                 body. Nothing more exciting happening here in terms of content, but just filling up the
                                 space to make it look, at least at first glance, a bit more representative of how this
                                 would look in a real-world application.
@@ -132,10 +133,37 @@ export default function Home() {
                 </div>
 
             </div>
+
+
+            <div id="contact" className={styles.contactContainer}>
+                <div className={styles.leftContactContainer}>
+                    <h4>Questions?<br/>Fill the form it's easy.</h4>
+                    <form>
+
+                        <div className="test">
+
+                                <input type="text" id="fname" name="firstname" placeholder="First Name"></input>
+
+                            <input type="text" id="lname" name="lastname" placeholder="Last Name"></input>
+                        </div>
+
+                        <input type="text" id="email" name="email" placeholder="Email"></input>
+
+                                <textarea id="subject" name="subject" placeholder="Write something"></textarea>
+
+                        <input type="submit" value="Submit Form"></input>
+
+                    </form>
+                </div>
+            </div>
         </section>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-                integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-                crossOrigin="anonymous"></script>
+
+        <section className={styles.footer}>
+            <p>Mission is to create websites for large companies.</p>
+        </section>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossOrigin="anonymous" />
     </>
   )
 }

@@ -33,6 +33,13 @@
   padding: 11px;
   font-weight: 400;
   color: #565555;
+  transition: all 0.3s;
+}
+
+.navbar a:hover {
+  color: black;
+  cursor: pointer;
+  transition: all 0.3s;
 }
 
 .abody {
@@ -291,4 +298,98 @@
   width: 15px;
   opacity: 0.4;
   margin-left: 15px;
+}
+
+.contactContainer {
+  min-height: 100vh;
+  background: #f5f5f5;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  padding: 20px;
+}
+
+.contactContainer h4 {
+  color: black;
+  font-size: 60px;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+
+.leftContactContainer {
+  width: 100%;
+  text-align: center;
+}
+
+.footer p {
+  padding: 10px;
+  margin: 0;
+  text-align: center;
+}
+
+.footer {
+  background: #5f86e4;
+}
+
+
+@media only screen and (max-width: 730px) {
+  .bannerright {
+    display: none;
+  }
+  .bannerleft {
+    width: 100%;
+  }
+
+  .bannerleft h1 {
+    font-size: 44px;
+    text-align: center;
+  }
+
+  .normalBox,
+  .reverseBox {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .idesection img {
+    margin: auto;
+  }
+
+  .textcontainer {
+    margin-left: 0;
+  }
+
+  .headtitle {
+    text-align: center;
+    padding-top: 5vh;
+  }
+
+  .subtitle {
+    text-align: center;
+    width: 75%;
+  }
+
+  .reverseBox {
+    flex-direction: column-reverse;
+  }
+  .arrow,
+  .reverseArrow {
+    display: none;
+  }
+
+  .reverseTextcontainer {
+    margin: 0;
+  }
+
+  .subtitle {
+    margin: auto;
+  }
+
+}
+@media only screen and (max-width: 430px) {
+  .idesection img {
+    width: 330px;
+  }
+
 }
