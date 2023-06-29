@@ -118,16 +118,12 @@ export default function Home() {
                             <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#flush-collapseThree" aria-expanded="false"
                                     aria-controls="flush-collapseThree">
-                                Question #3
+                                Can I contact you through discord?
                             </button>
                         </h2>
                         <div id="flush-collapseThree" className="accordion-collapse collapse"
                              aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                            <div className={styles.abody}>Placeholder content for this accordion, which is intended to
-                                demonstrate the class. This is the third items accordion
-                                body. Nothing more exciting happening here in terms of content, but just filling up the
-                                space to make it look, at least at first glance, a bit more representative of how this
-                                would look in a real-world application.
+                            <div className={styles.abody}>Yes, my discord name is debitcards
                             </div>
                         </div>
                     </div>
