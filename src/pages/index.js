@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
+import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -31,9 +32,9 @@ export default function Home() {
           <div className={styles.navbar}>
               <div className={styles.navdiv}>
                   <h1 className={styles.name}>chiem.</h1>
-                  <a href="/">Home</a>
-                  <a href="#project">Projects</a>
-                  <a href="#contact">Contact</a>
+                  <Link href="/">Home</Link>
+                  <Link href="#project">Projects</Link>
+                  <Link href="#contact">Contact</Link>
               </div>
 
           </div>
@@ -43,8 +44,8 @@ export default function Home() {
                   <h1>
                       Crafting innovative websites<svg className={styles.svgicon} xmlns="http://www.w3.org/2000/svg" width="57.76257" height="42.77667" viewBox="0 0 57.76257 42.77667"><path d="M11.95807,9.16698c-3.74727,4.03459-7.49455,8.06917-11.24182,12.10376-1.37202,1.47722-.64613,3.49155,1.10317,4.17846,4.62035,1.81431,8.79785,4.64518,12.28856,8.16049,2.27051,2.28651,5.80634-1.24872,3.53553-3.53553-4.12829-4.15739-9.05087-7.30861-14.49489-9.44635l1.10317,4.17846c3.74727-4.03459,7.49455-8.06917,11.24182-12.10376,2.18766-2.35539-1.34005-5.89935-3.53553-3.53553h0Z" fill="currentColor"></path><path d="M42.26896,12.70251c3.74727,4.03459,7.49455,8.06917,11.24182,12.10376,.36772-1.39282,.73545-2.78564,1.10317-4.17846-5.44399,2.13773-10.36664,5.289-14.49489,9.44635-2.26983,2.28583,1.26405,5.82303,3.53553,3.53553,3.49076-3.51537,7.66813-6.34615,12.28856-8.16049,1.7493-.68691,2.47519-2.70124,1.10317-4.17846-3.74727-4.03459-7.49455-8.06917-11.24182-12.10376-2.19454-2.3628-5.72413,1.17913-3.53553,3.53553h0Z" fill="currentColor"></path><path d="M24.69051,40.9371c4.91551-12.58945,9.83102-25.17889,14.74653-37.76834,.49121-1.25808-.54011-2.74392-1.7461-3.0753-1.41591-.38905-2.58229,.48342-3.0753,1.7461-4.91551,12.58945-9.83102,25.17889-14.74653,37.76834-.49121,1.25808,.54011,2.74392,1.7461,3.0753,1.41591,.38905,2.58229-.48342,3.0753-1.7461h0Z" fill="currentColor"></path></svg></h1>
                   <h2>Im a Front-End developer based in 🇳🇱, Rotterdam with 3 years of experience in creating websites for Minecraft server owners.</h2>
-                  <a href="#project" className={styles.projectsbtn}><i className="fa-solid fa-arrow-down"></i> Projects</a>
-                  <a href="#contact" className={styles.emailbtn}><i className="fa-regular fa-envelope"></i> Email </a>
+                  <Link href="#project" className={styles.projectsbtn}><i className="fa-solid fa-arrow-down"></i> Projects</Link>
+                  <Link href="#contact" className={styles.emailbtn}><i className="fa-regular fa-envelope"></i> Email </Link>
               </div>
               <div className={styles.bannerright}>
                   <img className={styles.chiemimg} src="https://i.pinimg.com/564x/27/93/bf/2793bfd3bdf2ae50a59d62619a6d5193.jpg"></img>
